@@ -1,12 +1,11 @@
-import 'package:copper/models/note.dart';
-import 'package:copper/data/result.dart';
+
 import 'dart:ffi';
 
-import 'package:copper/models/note_repository.dart';
+import '../../models/note.dart';
+import '../../models/note_repository.dart';
+import '../result.dart';
 
 class NotesLocalDataSource implements NoteRepository {
-  
-
   @override
   Future<Result<Void>> deleteNote(String id) {
     // TODO: implement deleteNote
@@ -30,5 +29,8 @@ class NotesLocalDataSource implements NoteRepository {
     // TODO: implement saveNote
     throw UnimplementedError();
   }
+  
+
+  
 
 }

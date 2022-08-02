@@ -1,7 +1,8 @@
 import 'dart:ffi';
 
-import 'package:copper/data/result.dart';
-import 'package:copper/models/note.dart';
+import 'note.dart';
+import '../data/result.dart';
+
 
 abstract class NoteRepository {
   Future<Result<List<Note>>> fetchNotes();
